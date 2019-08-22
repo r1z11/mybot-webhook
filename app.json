@@ -1,0 +1,8 @@
+{
+    "name": "MyBot Webhook",
+    "description": "Facebook messenger bot webhook",
+    "repository": "https://github.com/r1z11/mybot-webhook",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "static"]
+  }
+  
