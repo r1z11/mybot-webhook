@@ -15,7 +15,7 @@ app.post('/webhook', (req, res) => {
   let body = req.body;
 
   // Checks this is an event from a page subscription
-  if (body.object === 'page') {
+  if (body.object == 'page') {
 
     // Iterates over each entry - there may be multiple if batched
     body.entry.forEach(function (entry) {
@@ -50,7 +50,7 @@ app.get('/webhook', (req, res) => {
   if (mode && token) {
 
     // Checks the mode and token sent is correct
-    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
+    if (mode == 'subscribe' && token === VERIFY_TOKEN) {
 
       // Responds with the challenge token from the request
       console.log('WEBHOOK_VERIFIED');
