@@ -39,7 +39,7 @@ app.post('/webhook', (req, res) => {
 app.get('/webhook', (req, res) => {
 
   // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "x6Wf0q72LV3FZBfPstUS3MoE7r6zqS4S"
+  let VERIFY_TOKEN = "EAAWsVrSVZCkIBALZAUCZAvBXdcgb2sLIGotODSnhO9JATjcS9b9sc2QVu0ZAZCHuzaZCJWHNRcBSmOK75wPbHCnQ7sLaFD2ZBvkJ72cgFJNbTnN8WjR7CTkhZASwM9EgIPSBtSfB6UWpRGp4TkPjb7QGjdGFsxw8NxHGqUmQ3XExv1VIiJpIxfLx"
 
   // Parse the query params
   let mode = req.query['hub.mode'];
@@ -62,3 +62,4 @@ app.get('/webhook', (req, res) => {
     }
   }
 });
+
